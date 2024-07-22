@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muhammad Abid Jamil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="sidebar">
+            <div class="arrow"></div>
+            <img src="images/abidlogo-removebg-preview.png" alt="Logo" class="logo">
+            <ul>
+            <li><a href="#home">Muhammad Abid Jamil</a></li>
+        </ul>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>PhD in Computer Science | Assistant Professor at Mustaqbil University</p>
+        </section>
+
+        <!-- <div class="carousel">
+            <div class="carousel-item active">
+                <h2>Teaching</h2>
+                <img src="carousel1.jpg" alt="Teaching">
+                <p>Details about your teaching experience and current courses.</p>
+            </div>
+            <div class="carousel-item">
+                <h2>Research</h2>
+                <img src="path/to/research-image.jpg" alt="Research">
+                <p>Details about your research interests and ongoing projects.</p>
+            </div>
+            <div class="carousel-item">
+                <h2>Publications</h2>
+                <img src="path/to/publications-image.jpg" alt="Publications">
+                <p>A list of your academic publications and papers.</p>
+            </div>
+            <div class="carousel-item">
+                <h2>Projects</h2>
+                <img src="path/to/projects-image.jpg" alt="Projects">
+                <p>Details of projects you've worked on or are currently working on.</p>
+            </div>
+            <div class="carousel-item">
+                <h2>Membership</h2>
+                <img src="path/to/membership-image.jpg" alt="Membership">
+                <p>Professional memberships and affiliations.</p>
+            </div>
+            <div class="carousel-item">
+                <h2>Services</h2>
+                <img src="path/to/services-image.jpg" alt="Services">
+                <p>Consulting and other services you offer.</p>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+         -->
+         
+        
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <p>Information about your teaching experience and current courses.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul class="education-list">
+                <li>
+                    <div class="education-item">
+                        <h3>PhD in Information Technology</h3>
+                        <p><strong>Islamic University Malaysia</strong></p>
+                        <p>Dissertation Topic: Maintenance of Software Product Line using Software Testing Optimization Techniques</p>
+                        <p>Advisor: Dr. Normi Sham Bt Awang Abubakar</p>
+                        <p>Duration: September 2013 - December 2020</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="education-item">
+                        <h3>MSc. in Engineering Management Information Systems</h3>
+                        <p><strong>Royal Institute of Technology (KTH), Stockholm, Sweden</strong></p>
+                        <p>Dissertation Topic: Maintenance of Software Product Line using Software Testing Optimization Techniques</p>
+                        <p>Advisor: Dr. Normi Sham Bt Awang Abubakar</p>
+                        <p>Duration: August 2005 - March 2012</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+        
+
+        <section id="research">
+            <h2>Research</h2>
+            <p>Details about your research interests and ongoing projects.</p>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>A list of your academic publications and papers.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Details of projects you've worked on or are currently working on.</p>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Download or view your resume here.</p>
+        </section>
+
+        <section id="membership">
+            <h2>Membership</h2>
+            <p>Professional memberships and affiliations.</p>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <p>Consulting and other services you offer.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Abid Jamil. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentIndex = 0;
+            const items = document.querySelectorAll('.carousel-item');
+            const totalItems = items.length;
+
+            document.querySelector('.next').addEventListener('click', () => {
+                items[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % totalItems;
+                items[currentIndex].classList.add('active');
+            });
+
+            document.querySelector('.prev').addEventListener('click', () => {
+                items[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+                items[currentIndex].classList.add('active');
+            });
+
+            // Initialize first item as active
+            items[0].classList.add('active');
+        });
+    </script>
+</body>
+</html>

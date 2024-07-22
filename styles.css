@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for the entire page */
+}
+
+header {
+    background-color: #f9f9f9; /* Light background for the header */
+    color: #333; /* Dark text color for contrast */
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 10px;
+    width: 250px; /* Adjust width as needed */
+    position: fixed;
+    height: 100%;
+    background-color: #f9f9f9; /* Light background for the navbar */
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow to the right */
+}
+
+nav .logo {
+    height: 200px;
+    height: 200px; /* Adjust the size of the logo image */
+    margin-bottom: 20px; /* Space between logo and navigation links */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    color: #333; /* Dark text color for links */
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Make links full-width for easier clicking */
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Background color on hover */
+}
+
+main {
+    margin-left: 250px; /* Margin to accommodate the vertical navbar */
+    padding: 20px;
+}
+
+
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff; /* Light background for sections */
+    border-radius: 8px; /* Optional: Rounded corners for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+
+
+footer {
+    background-color: #f9f9f9; /* Light background for the footer */
+    color: #333; /* Dark text color for contrast */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: calc(100% - 250px); /* Adjust width to fit the remaining space */
+    bottom: 0;
+    left: 250px; /* Align footer with the main content */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+#education {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#education h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.education-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education-list li {
+    margin-bottom: 20px;
+}
+
+.education-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.education-item p strong {
+    color: #333;
+}
+
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+/* General styles for both sections */
+section {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Specific styles for Employment section */
+#employment .job {
+    background-color: #f0f8ff; /* Light Alice Blue background */
+    border-left: 4px solid #4682b4; /* Steel Blue border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#employment .job h3 {
+    color: #4682b4; /* Steel Blue color */
+    margin-top: 0;
+}
+
+/* Specific styles for IT Industry Experience section */
+#industry-experience .industry-job {
+    background-color: #fffaf0; /* Light Floral White background */
+    border-left: 4px solid #32cd32; /* Lime Green border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#industry-experience .industry-job h3 {
+    color: #32cd32; /* Lime Green color */
+    margin-top: 0;
+}
+#membership {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+#membership h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.membership-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.membership-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.membership-list img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.membership-list a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.membership-list a:hover {
+    color: #007bff;
+}
+
+.membership-list a img {
+    border-radius: 4px;
+}
